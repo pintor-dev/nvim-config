@@ -62,20 +62,32 @@ return packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'kyazdani42/nvim-tree.lua'
 
+  -- Bufferline
+--  use "akinsho/bufferline.nvim"
+--  use "moll/vim-bbye"
+
 -- Colorschemes
   use "lunarvim/darkplus.nvim"
   use "folke/tokyonight.nvim"
 
--- cmp (completion)
+-- CMP (completion)
   use "hrsh7th/nvim-cmp" -- The completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
-  use "hrsh7th/cmp-cmdline" -- cmdline completions
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "hrsh7th/cmp-nvim-lsp"
+  use "hrsh7th/cmp-nvim-lua"
 
-  -- snippets
+  -- Snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
+-- LSP (language server protocol)
+  use "neovim/nvim-lspconfig"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "nvimtools/none-ls.nvim"
+  use "RRethy/vim-illuminate"
 
 -- Telescope
   use "nvim-telescope/telescope.nvim"

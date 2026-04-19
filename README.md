@@ -1,6 +1,6 @@
 # 🚀 Neovim configuration
 
-Based on **Lua**
+Based on **Lua**.
 
 ## 🛠️ Plugins
 
